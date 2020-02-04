@@ -15,3 +15,6 @@ This exercise will give you the opportunity to edit an existing JSON file (in th
 If you need to check to see if you have produced a valid JSON file, you can validate it at https://jsonformatter.org/json-editor.
 
 Edit the LICENSE and README.md and submit a URL to your repository on Canvas.
+
+
+This is an edited version of a pre-existant interactive game created by my professor, Jason Francis. I edited this by adding, removing, and rearranging components that were already in the game for my C220 class at Indiana University
