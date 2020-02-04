@@ -1,5 +1,5 @@
 {
-	"WHOUS": {
+	"WHOUS": { 
 		"name": "West of House",
 		"desc": "This is an open field west of a white house, with a boarded front door.",
 		"exits": [{
@@ -159,7 +159,7 @@
 		"name": "Forest",
 		"desc": "This is a dimly lit forest, with large trees all around.  One\nparticularly large tree with some low branches stands here.",
 		"exits": [{
-			"exit": "UP",
+			"exit": "DOWN",
 			"target": "TREE"
 		}, {
 			"exit": "NORTH",
@@ -529,7 +529,7 @@
 	},
 	"MGRAT": {
 		"name": "Grating Room",
-		"desc": "",
+		"desc": "If you stay here much longer, you will be eaten by a Grue.",
 		"exits": [{
 			"exit": "SW",
 			"target": "MAZ11"
@@ -789,7 +789,13 @@
 			"exit": "EAST",
 			"target": "CRAW1"
 		}],
-		"items": []
+		"items": [
+            {
+                "item": "MUMMY",
+                "desc": "An ancient Egyptian mummy is sprawled on the floor",
+                "take": "You stuff it into your sack."
+            }
+        ]
 	},
 	"ICY": {
 		"name": "Glacier Room",
@@ -887,10 +893,11 @@
 		}, {
 			"exit": "EAST",
 			"target": "CAVE2"
-		}],
-		"items": []
+		}, {"exit": "NORTH"
+			,"target": "MIRR1"
+		
 	},
-	"CAVE1": {
+	"CAVE1":{
 		"name": "Cave",
 		"desc": "This is a small cave with an entrance to the north and a stairway\nleading down.",
 		"exits": [{
@@ -1072,7 +1079,7 @@
 	},
 	"DEAD7": {
 		"name": "Dead End",
-		"desc": "Dead End",
+		"desc": "You have reached a Dead End",
 		"exits": [{
 			"exit": "SOUTH",
 			"target": "BLADD"
@@ -1117,7 +1124,7 @@
 	},
 	"BATS": {
 		"name": "Bat Room",
-		"desc": "",
+		"desc": "This is a cave full of bats. They are currently sleeping.",
 		"exits": [{
 			"exit": "EAST",
 			"target": "SQUEE"
@@ -1232,6 +1239,7 @@
 	"MINE7": {
 		"name": "Coal mine",
 		"desc": "This is a non-descript part of a coal mine.",
+		"SIGN": "A sign is here that points down.",
 		"exits": [{
 			"exit": "EAST",
 			"target": "MINE1"
@@ -1681,7 +1689,7 @@
 	},
 	"FCHMP": {
 		"name": "Moby lossage",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2061,6 +2069,9 @@
 			"exit": "NE",
 			"target": "BKTE"
 		}, {
+			"exit": "ROB",
+			"target": "BKVAU"
+		}, {
 			"exit": "SOUTH",
 			"target": "GALLE"
 		}],
@@ -2178,7 +2189,7 @@
 		"items": []
 	},
 	"CP": {
-		"name": "Room in a Puzzle",
+		"name": "Just a room (not suspicious at all).",
 		"desc": "",
 		"exits": [{
 			"exit": "NORTH",
@@ -2323,7 +2334,7 @@
 	},
 	"MRD": {
 		"name": "Hallway",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "NORTH",
 			"target": "FDOOR"
@@ -2347,7 +2358,7 @@
 	},
 	"MRG": {
 		"name": "Hallway",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "NORTH",
 			"target": "MRD"
@@ -2359,7 +2370,7 @@
 	},
 	"MRC": {
 		"name": "Hallway",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "NORTH",
 			"target": "MRG"
@@ -2386,7 +2397,7 @@
 	},
 	"MRB": {
 		"name": "Hallway",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "NORTH",
 			"target": "MRC"
@@ -2413,7 +2424,7 @@
 	},
 	"MRA": {
 		"name": "Hallway",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "NORTH",
 			"target": "MRB"
@@ -2434,31 +2445,31 @@
 	},
 	"MRDE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRDW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRGW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
 	"MRCE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [{
 			"exit": "ENTER",
 			"target": "INMIR"
@@ -2791,7 +2802,7 @@
 	},
 	"PCELL": {
 		"name": "Prison Cell",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
